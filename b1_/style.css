@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: #e6e5e5; 
+}
+.container {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+    align-items: center;
+    padding: 15px 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+.btn {
+    outline: none;
+    border: none;
+    background-color: #e6e5e5; 
+    font-weight: 600;
+    cursor: pointer;
+}
+i {
+    color: #333;
+    font-size: 34px;
+}
+/* giao diện tối */
+body.dark {
+    background: #000;
+    color: #fff;
+}
+body.dark .header {
+    background: #3f3e3e;
+}
+body.dark .logo {
+    color: #fff;
+}
+body.dark .btn {
+    background: #3f3e3e;
+}
+body.dark i {
+    color: #fff;
+}
+

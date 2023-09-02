@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="tbl">
+        <tr id="flex">
+            <td colspan="3"><input type="text" id="result" ></td>
+            <td ><input type="button" value="C" id="clear" onclick="crl()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" id="btn" onclick="Num('1')"></td>
+            <td><input type="button" value="2" id="btn" onclick="Num('2')"></td>
+            <td><input type="button" value="3" id="btn" onclick="Num('3')"></td>
+            <td><input type="button" value="/" id="btn" onclick="Num('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" id="btn" onclick="Num('4')"></td>
+            <td><input type="button" value="5" id="btn" onclick="Num('5')"></td>
+            <td><input type="button" value="6" id="btn" onclick="Num('6')"></td>
+            <td><input type="button" value="-" id="btn" onclick="Num('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" id="btn" onclick="Num('7')"></td>
+            <td><input type="button" value="8" id="btn" onclick="Num('8')"></td>
+            <td><input type="button" value="9" id="btn" onclick="Num('9')"></td>
+            <td><input type="button" value="+" id="btn" onclick="Num('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." id="btn" onclick="Num('.')"></td>
+            <td><input type="button" value="0" id="btn" onclick="Num('0')"></td>
+            <td><input type="button" value="=" id="btn" onclick="Equal()"></td>
+            <td><input type="button" value="*" id="btn" onclick="Num('*')"></td>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

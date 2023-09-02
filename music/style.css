@@ -1,0 +1,217 @@
+html {
+    line-height: 1.5;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+    outline: none;
+    font: inherit;
+}
+input {
+    line-height: normal;
+}
+label,
+button {
+    cursor: pointer;
+    user-select: none !important;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select:focus,
+    textarea {
+        font-size: 16px;
+    }
+}
+body {
+    padding: 20px;
+
+}
+.music {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 20px 35px;
+}
+.music-thumb {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    box-shadow: rgba(7, 7, 7, 0.1) 0px 4px 12px;
+}
+
+/* .music-thumb.is-play {
+
+    animation: circle 30s linear infinite;
+} */
+
+/* @keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+.music-thumb img {
+    object-fit: cover; 
+}
+.music-name {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.timer {
+/* cú pháp facb */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.controls {
+    /* cú pháp flex-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+}
+i {
+    font-size: 30px;
+    cursor: pointer;
+}
+i:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px, 0 0 0 10px rgb(160, 89, 89);
+
+}
+.play i {
+    margin-left: 0px;
+    font-size: 25px;
+
+}
+.range {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; 
+    cursor: pointer;
+}
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: #b1acac;
+    border-radius: 2px;
+}
+.range::-webkit-slider-thumb { 
+    -webkit-appearance: none;
+    background-color: #20e3b2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff,0 0 0 4px rgba(0 ,0,0 ,0.2 );
+    cursor: pointer;
+    /* position: absolute;
+    top: 319px; */
+    margin-top: -5.5px;
+}
+.play-inf,
+.play-repeat {
+    font-size: 18px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #706d6d;
+    transition: all 0.3s;
+}
+.play-inf:hover,
+.play-repeat:hover {
+    color: #535252;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

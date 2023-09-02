@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #5e3480;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    transform: rotate(-50%,-50%);
+}
